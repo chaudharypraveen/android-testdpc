@@ -1,0 +1,5 @@
+include ':TestDPC', ':setupcompat', ':setupdesign'
+
+project(':TestDPC').projectDir = new File(rootDir, "app")
+project(':setupcompat').projectDir = new File(rootDir, "setupcompat")
+project(':setupdesign').projectDir = new File(rootDir, "setupdesign")

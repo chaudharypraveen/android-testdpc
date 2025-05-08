@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.afwsamples.testdpc",
+  "variantName": "normalRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 5004,
+      "versionName": "5.0.4",
+      "outputFile": "TestDPC-normal-release.apk"
+    }
+  ],
+  "elementType": "File"
+}
