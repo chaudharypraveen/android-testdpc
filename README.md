@@ -7,8 +7,6 @@ See the [documentation](https://developer.android.com/work/index.html) to learn 
 
 ## Getting Started
 
-This sample uses the Bazel build system. To build this project, use the "bazel build testdpc" command.
-
 This app can also be found [on the Play store](https://play.google.com/store/apps/details?id=com.afwsamples.testdpc).
 
 ## Provisioning
@@ -83,39 +81,6 @@ TestDPC v9.0.5+ can be setup as Device Management Role Holder.
 
     Note: unlike DO/PO, this change is not persisted so TestDPC needs to be
     marked as role holder again if the device reboots.
-
-## Android Studio import
-
-To import this repository in Android Studio, you need to use the 
-[Bazel for Android Studio](https://plugins.jetbrains.com/plugin/9185-bazel-for-android-studio)
-Plugin.
-
-When importing the project you have to select the folder containing the Bazel's
-`BUILD` file. When prompted to select a "project view", you can choose the
-option "Copy external" and choose the `scripts/ij.bazelproject` available in
-this repository.
-
-Once Bazel has complete the import operation and the first sync of the
-project, you can create a "Run Configuration".
-Select "Bazel Command" as Configuration type and add `//:testdpc` as
-"target expression".
-
-You can now run the project from inside Android Studio.
-
-## Building with Bazel
-
-The repository includes a `build.sh` script to build the application. The required
-[setupdesign library](https://android.googlesource.com/platform/external/setupdesign/+/refs/heads/main)
-is now imported and patched dynamically using the command line utility `ed`. This needs to be
-available on the path to successfully build the project.
-
-### `ANDROID_HOME` environment setup
-
-Bazel requires that you set the `ANDROID_HOME` environment variable to the path of your Android SDK.
-As an example, you can add to your `.bashrc` on linux:
-```
-export ANDROID_HOME=<Path to the Android SDK>
-```
 
 ## Support
 
